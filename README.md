@@ -4,7 +4,7 @@ A data science project analyzing California's 15 highest peaks over 14,000 feet.
 
 About the Dataset
 
-This project examines California's "14ers", peaks exceeding 14,000 feet elevation. The dataset includes 15 peaks with 11 attributes each, sourced from Peakbagger/SummitPost/MountainProject
+This project examines California's "14ers", 15 peaks exceeding 14,000 feet elevation. The dataset includes 15 peaks with 11 attributes each, sourced from Peakbagger/SummitPost/MountainProject
 
 Data Fields:
 - Peak name, elevation, and mountain range
