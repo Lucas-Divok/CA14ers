@@ -2,6 +2,8 @@ California 14ers Data Analysis
 
 A data science project analyzing California's 15 highest peaks over 14,000 feet. Built with Python to explore elevation patterns, climbing difficulty, and route characteristics.
 
+This analysis focuses on the standard route to each summit - typically the easiest or most commonly used path. For example, Mount Whitney is analyzed via the Whitney Trail rather than technical routes like the Mountaineer's Route. Each peak is treated as an individual climb from trailhead to summit, even though some peaks can be combined into multi-peak trips.
+
 About the Dataset
 
 This project examines California's "14ers", 15 peaks exceeding 14,000 feet elevation. The dataset includes 15 peaks with 11 attributes each, sourced from Peakbagger/SummitPost/MountainProject
