@@ -241,7 +241,36 @@ print(f"Data types:\n{df.dtypes}")
 # STAGE 2 DATA ANALYSIS
 
 
-#peak_name', 222
+#peak_name', 
+
+#elevation_ft', highest/lowest/avg
+print("\nElevation Statistics!")
+print(f"Elevation range: {int(df['elevation_ft'].min())} - {int(df['elevation_ft'].max())} feet")
+print(f"Average elevation: {int(df['elevation_ft'].mean())} feet")
+print(f"Median elevation: {int(df['elevation_ft'].median())} feet")
+
+highest_elevation = df['elevation_ft'].max()
+lowest_elevation = df['elevation_ft'].min()
+highest_peak = df[df['elevation_ft'] == highest_elevation]['peak_name'].iloc[0]
+lowest_peak = df[df['elevation_ft'] == lowest_elevation]['peak_name'].iloc[0]
+
+print(f"Highest peak: {highest_peak} {highest_elevation} ft")
+print(f"Lowest 14er: {lowest_peak} {lowest_elevation} ft")
+
+
+
+#range', how many are in each range?
+
+
+#prominence_ft', most prominent? least prominent? avg?
+
+#difficulty_class', 
+
+#route_distance_miles', longest?shortest?avg?
+print("\nRoute Distance Statistics")
+print(f"Longest Distance: {int(df['route_distance_miles'].max())} miles ")
+print(f"Shortest Distance: {int(df['route_distance_miles'].min())} miles ")
+print(f"Average Distance to Hike for a Cali 14er: {int(df['route_distance_miles'].mean())} miles")
 
 
 #elevation_gain_ft', most elev gain? least elev gain? avg elv gain?
