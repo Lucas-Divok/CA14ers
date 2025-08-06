@@ -249,6 +249,16 @@ print(f"Elevation range: {int(df['elevation_ft'].min())} - {int(df['elevation_ft
 print(f"Average elevation: {int(df['elevation_ft'].mean())} feet")
 print(f"Median elevation: {int(df['elevation_ft'].median())} feet")
 
+highest_elevation = df['elevation_ft'].max()
+lowest_elevation = df['elevation_ft'].min()
+highest_peak = df[df['elevation_ft'] == highest_elevation]['peak_name'].iloc[0]
+lowest_peak = df[df['elevation_ft'] == lowest_elevation]['peak_name'].iloc[0]
+
+print(f"Highest peak: {highest_peak} {highest_elevation} ft")
+print(f"Lowest 14er: {lowest_peak} {lowest_elevation} ft")
+
+
+
 #range', how many are in each range?
 
 
@@ -264,6 +274,7 @@ print(f"Average Distance to Hike for a Cali 14er: {int(df['route_distance_miles'
 
 
 #elevation_gain_ft', most elev gain? least elev gain? avg elv gain?
+
 
 #best_months', 
 
